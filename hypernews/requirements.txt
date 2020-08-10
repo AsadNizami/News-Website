@@ -1,4 +1,4 @@
-setuptools==1.0
+
 distribute==0.6.28
 appnope==0.1.0
 backcall==0.1.0
