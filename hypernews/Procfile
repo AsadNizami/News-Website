@@ -1,1 +1,1 @@
-web: gunicorn hypernews.wsgi -- log-file -
+web: gunicorn hypernews.wsgi --log-file -
