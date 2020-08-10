@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8'>
+<title>Frozen Times</title>
+<body><header><h2>Frozen News</h2>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+</header>
+	
+
+{% regroup data by created|slice:10 as news_list %}
+
+{% for new in news_list %}
+    <h4>{{ new.grouper }}</h4>
+    <ul>
+        {% for task in new.list %}
+		
+          <li><a target='_blank' href='/news/{{task.link}}/'>{{ task.title }}</a></li>
+		  
+        {% endfor %}
+    </ul>
+    
+{% endfor %}
+<div class="submit">
+<form action="" method="get">
+<div class="inp">
+	<input type="text" placeholder="Search news" name="q">
+</div>
+<button class="btn" type="submit">SUBMIT</button>
+</form>
+</div>
+<br>
+<div class="c_link">
+<a target="_blank" href="/news/create/">Create News</a>
+</div>
+<footer>
+<h5>&copy FrozenCandy 2020</h5>
+</body>
+</html>

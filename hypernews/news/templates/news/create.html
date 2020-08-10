@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset='utf-8'>
+	<title>Create</title>
+	{% load static %}
+<link rel="stylesheet" href="{% static 'css/base_create.css' %}">
+	</head>
+	<body>
+	<div class="create">
+	<h1>CREATE NEWS</h1>
+	<form action="" method="post">{% csrf_token %}
+	<div class="textbox">
+	<input type="text" placeholder="Title" name="title">
+	</div>
+	<div class="textbox">
+	<input type="text" placeholder="Text" name="text">
+	</div>
+	
+	<br><br>
+	
+	<button class="btn" type="submit">SUBMIT</button>
+	<br><br>
+	</form>
+	</div>
+	<div class="link">
+	<a target="_blank" href="/news/">Main Page</a>
+	</div>
+	</body>
+</html>

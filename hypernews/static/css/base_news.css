@@ -1,0 +1,38 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: url(dark4.jpg) no-repeat;
+	background-size: cover;
+}
+.date{
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	color: white;
+	font-size: 30px;
+}
+.link{
+	position: absolute;
+	top:2%;
+	left:85%;
+	font-size: 35px;
+}
+.link a{
+	color: white;
+	text-decoration: none;
+}
+.title {
+	color: white;
+	position: absolute;
+	font-size: 35px;
+	left: 45%;
+}
+.text{
+	color: #D3D3D3;
+	position: absolute;
+	top: 40%;
+	left: 45%;
+	font-size: 30px;
+	
+}
