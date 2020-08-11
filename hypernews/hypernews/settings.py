@@ -27,7 +27,7 @@ SECRET_KEY = '(-q5783z2mh-cd217skey@(+_np2&j0=sl6suvo)ah2uwz@9ij'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', 'frozennews.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'frozennews.herokuapp.com', 'newsfrozen.herokuapp.com']
 
 DATABASES = {}
 # Application definition
